@@ -11,7 +11,7 @@ WETH = Address("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2")
 @chain.connect(
     accounts=2,
     chain_id=1,
-    fork="https://eth-mainnet.g.alchemy.com/public")
+    fork=None)
 # @on_revert(revert_handler)
 def test_default():
     example = Example.deploy(WETH)

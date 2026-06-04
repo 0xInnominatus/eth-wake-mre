@@ -1,11 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
+import { ERC20 } from "./ERC20.sol";
+
 contract Example
 {
-	address public weth;
-	constructor(address _weth)
+	string public name;
+
+	constructor(ERC20 token)
 	{
-		weth = _weth;
+		name = token.name();
 	}
 }

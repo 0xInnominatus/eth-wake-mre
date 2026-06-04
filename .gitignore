@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.wake
+pytypes
+*.py[cod]
+wake-coverage.cov

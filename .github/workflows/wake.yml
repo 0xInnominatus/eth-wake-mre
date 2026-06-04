@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Wake environment
+        uses: Ackee-Blockchain/wake-setup-action@0.1.0
+
+      - name: Wake up
+        run: wake --version

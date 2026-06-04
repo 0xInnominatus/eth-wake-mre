@@ -12,3 +12,12 @@ jobs:
 
       - name: Wake up
         run: wake --version
+      
+      - name: Compile contracts
+        run: wake compile
+      
+      - name: Generate pytypes
+        run: wake pytypes generate
+      
+      - name: Run tests
+        run: wake test

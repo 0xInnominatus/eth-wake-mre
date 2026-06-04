@@ -1,5 +1,6 @@
 [compiler.solc]
 target_version = "0.8.23"
+evm_version = "paris"
 exclude_paths = ["lib", "script", "node_modules", ".venv", "venv", "test"]
 include_paths = ["node_modules"]
 

@@ -6,6 +6,7 @@ exclude_paths = ["lib", "script", "node_modules", ".venv", "venv", "test"]
 include_paths = ["node_modules"]
 
 [compiler.solc.optimizer]
+enabled = true
 runs = 200
 
 [detectors]
